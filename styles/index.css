@@ -1,0 +1,125 @@
+        @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+        body {
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+        
+        .logo1 {
+            height: 135px;
+            background-image: url("../resources/logo2.svg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        
+        .img {
+            background-image: url("../resources/pexels-ivan-oboleninov-2916814.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            height: 600px;
+        }
+        
+        .img-2 {
+            background-image: url("../resources/pexels-pixabay-413885.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            height: 600px;
+        }
+        
+        .background {
+            /* The image used */
+            background-image: url("../resources/emilia-clarke-1280x720-most-popular-celebs-in-2015-actress-daenerys-2714.jpg");
+            z-index: -99999;
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .gradient {
+            background-color: rgb(0, 0, 0);
+            /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+        
+        #signUpPage {
+            transition: all 1s ease-in-out;
+        }
+        
+        #signInPage {
+            transition: all 1s ease-in-out;
+        }
+        
+        .red-border {
+            border: 1px solid red;
+        }
+        
+        .err-msg {
+            height: 20px;
+        }
+        
+        .password-eye {
+            position: absolute;
+            top: 375px;
+            left: 675px;
+            cursor: pointer;
+        }
+        
+        .tab {
+            cursor: pointer;
+            text-decoration: none;
+            color: whitesmoke;
+        }
+        
+        .img-preview {
+            min-height: 200px;
+            color: red;
+        }
+        
+        #img_preview {
+            height: 190px;
+            width: auto;
+        }
+        
+        .img_thumbnail {
+            height: 100px;
+            width: auto;
+        }
+        
+        .view_box {
+            height: 550px;
+        }
+        
+        .menu-link {
+            cursor: pointer;
+        }
+        
+        .spinner-bg {
+            display: none;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(0, 0, 0);
+            width: 100%;
+            height: 100%;
+            z-index: 9999;
+            opacity: 0.65;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+        
+        @media (max-width:768px) {
+            body {
+                overflow-y: scroll;
+                overflow-x: hidden;
+            }
+        }
+        
+        @media (min-width:769px) {
+            body {
+                overflow-y: hidden;
+                overflow-x: hidden;
+            }
+        }

@@ -1,0 +1,77 @@
+body {
+    box-sizing: border-box;
+    overflow-y: scroll;
+}
+
+.posterCaption {
+    position: absolute;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    margin-bottom: 350px;
+    margin-left: -800px;
+}
+
+@keyframes example {
+    from {
+        left: 0px;
+    }
+    to {
+        left: 1000px;
+    }
+}
+
+.postertitle {
+    font-size: 55px;
+    color: white;
+}
+
+.postertext {
+    font-size: 25px;
+    color: white;
+}
+
+.captionImage {
+    height: 800px;
+}
+
+.heading-link-1 {
+    font-size: 55px !important;
+    display: inline;
+}
+
+.zoomcard {
+    overflow: hidden;
+}
+
+.cardImgTop {
+    transition: all 0.3s ease-out;
+}
+
+.cardImgTop:hover {
+    transform: scale(1.1);
+}
+
+.cart-button {
+    background-color: red;
+    color: white;
+    height: 35px;
+    width: 100px;
+    border-radius: 5px;
+    border: none;
+}
+
+.wishlist-button {
+    background-color: red;
+    color: white;
+    height: 35px;
+    min-width: 140px;
+    border-radius: 5px;
+    border: none;
+}
+
+.my-font {
+    font-family: 'Calibri';
+    font-weight: 900px;
+}
