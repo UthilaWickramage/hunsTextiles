@@ -1,0 +1,353 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+/* CSS Document */
+
+body {
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+.box {
+    width: 300px;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 25px;
+}
+
+.slide-img {
+    height: 450px;
+    position: relative;
+}
+
+.slide-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-sizing: border-box;
+}
+
+.detail-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    font-family: calibri;
+}
+
+.type {
+    display: flex;
+    flex-direction: column;
+}
+
+.type a {
+    color: #222222;
+    margin: 5px 0px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    padding-right: 8px;
+}
+
+.type span {
+    color: rgba(26, 26, 26, 0.5);
+}
+
+.price {
+    color: #333333;
+    font-weight: 600;
+    font-size: 1.1rem;
+    font-family: poppins;
+    letter-spacing: 0.5px;
+}
+
+.overlay {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background-color: rgba(92, 95, 236, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buy-btn {
+    width: 160px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    color: #252525;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-family: calibri;
+    border-radius: 20px;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+}
+
+.buy-btn-2 {
+    width: 180px;
+    height: 50px;
+    display: flex;
+    border: 1px solid #f15fa3;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    color: #252525;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-family: calibri;
+    border-radius: 20px;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+}
+
+.buy-btn:hover {
+    color: #FFFFFF;
+    background-color: #f15fa3;
+    transition: all ease 0.3s;
+}
+
+.buy-btn-2:hover {
+    color: #FFFFFF;
+    background-color: #f15fa3;
+    transition: all ease 0.3s;
+}
+
+.overlay {
+    visibility: hidden;
+}
+
+.slide-img:hover .overlay {
+    visibility: visible;
+    animation: fade 0.5s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.slider {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.color-circle {
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    border: 1px solid whitesmoke;
+    border-radius: 50%;
+}
+
+.radio-group {
+    position: relative;
+}
+
+.radio {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background-color: lightblue;
+    border: 2px solid lightblue;
+    cursor: pointer;
+    margin: 2px 0;
+}
+
+.radio.selected {
+    border-color: blue;
+}
+
+.title1 {
+    font-family: 'Dancing Script', cursive;
+}
+
+.addnewimg {
+    height: 25px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    opacity: 50%;
+}
+
+.spinner-bg {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    opacity: 0.65;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.modImg {
+    background: url("resources/WhatsApp_Image_2021-11-02_at_00.21.57-removebg-preview.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.glow {
+    font-size: 80px;
+    color: #fff;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #cfcd5c, 0 0 50px #e6e200, 0 0 60px #e6e200, 0 0 70px #e6e200;
+    }
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #e6e200, 0 0 50px #e6e200, 0 0 60px #e6e200, 0 0 70px #e6e200, 0 0 80px #e6e200;
+    }
+}
+
+#goToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 20px;
+    font-weight: bolder;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+    width: 50px;
+}
+
+.shine-me {
+    width: 100%;
+    /*Make sure the animation is over the whole element*/
+    -webkit-animation-name: ShineAnimation;
+    -webkit-animation-duration: 6s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: cubic-bezier(.12, .89, .98, .47);
+}
+
+@-webkit-keyframes ShineAnimation {
+    from {
+        background-repeat: no-repeat;
+        background-image: -webkit-linear-gradient( top left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.0) 45%, rgba(255, 255, 255, 0.5) 48%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0.5) 52%, rgba(255, 255, 255, 0.0) 57%, rgba(255, 255, 255, 0.0) 100%);
+        background-position: -250px -250px;
+        background-size: 700px 700px
+    }
+    to {
+        background-repeat: no-repeat;
+        background-position: 350px 350px;
+    }
+}
+
+.ProgressBar {
+    margin: 0 auto;
+    padding: 2em 0 3em;
+    list-style: none;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ProgressBar-step {
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+.ProgressBar-step:before,
+.ProgressBar-step:after {
+    content: "";
+    height: 0.5em;
+    background-color: #9f9fa344;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    left: -50%;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.25s ease-out;
+}
+
+.ProgressBar-step:first-child:before,
+.ProgressBar-step:first-child:after {
+    display: none;
+}
+
+.ProgressBar-step:after {
+    background-color: #00d111;
+    width: 0%;
+}
+
+.ProgressBar-step.is-complete+.ProgressBar-step.is-current:after,
+.ProgressBar-step.is-complete+.ProgressBar-step.is-complete:after {
+    width: 100%;
+}
+
+.ProgressBar-icon {
+    width: 1.5em;
+    height: 1.5em;
+    background-color: #9f9fa3c4;
+    fill: #9f9fa3b6;
+    border-radius: 50%;
+    padding: 0.5em;
+    max-width: 100%;
+    z-index: 10;
+    position: relative;
+    transition: all 0.25s ease-out;
+}
+
+.is-current .ProgressBar-icon {
+    fill: #00d111;
+    background-color: #00d111;
+}
+
+.is-complete .ProgressBar-icon {
+    fill: #00d111;
+    background-color: #00d111;
+}
+
+.ProgressBar-stepLabel {
+    display: block;
+    text-transform: uppercase;
+    color: #9F9FA3;
+    position: absolute;
+    padding-top: 0.5em;
+    width: 100%;
+    transition: all 0.25s ease-out;
+}
+
+.is-current>.ProgressBar-stepLabel,
+.is-complete>.ProgressBar-stepLabel {
+    color: #000;
+}
+
+.wrapper {
+    max-width: 1000px;
+    margin: 4em auto;
+    font-size: 16px;
+}
